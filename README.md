@@ -6,7 +6,7 @@ Based on this rate, it will need 78 days to finish ingestion. Apprarently it is 
 
 To save DBA time and also allow it continuesly run ingestion over night, I save all data to my local file system first, then let producer read local files. With new producer, the ingestion finishes less than 24 hours.
 
-<h2>To build</h2>
+<h2>build</h2>
 **linux**
 download the project, in the project root, type
 **mvn clean package**
@@ -16,8 +16,8 @@ uber-kafka-file-producer-0.0.1-SNAPSHOT.jar will be generated in target dir
 You can build it using eclipse or other IDE, export jar
 
 <h2>Run</h2>
-copy config.properties, log4j.properties and uber-kafka-file-producer-0.0.1-SNAPSHOT.jar in the same dir
-make sure update your brokers ip in config.properties file
+copy config.properties, log4j.properties and uber-kafka-file-producer-0.0.1-SNAPSHOT.jar in the same dir<br>
+make sure update your brokers ip in config.properties file<br>
 linuxBox> nohup java -Xms256m -Xmx1096m -jar uber-kafka-file-producer-0.0.1-SNAPSHOT.jar ./root_file_folder dir_list.txt
 
 <h2>File layout example</h2>
