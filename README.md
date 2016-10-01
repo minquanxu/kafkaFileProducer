@@ -23,12 +23,12 @@ linuxBox> nohup java -Xms256m -Xmx1096m -jar uber-kafka-file-producer-0.0.1-SNAP
 <h2>File layout example</h2>
 * SurveyBackFillFiles
    * sql_server_table1
-    * file1
-    * file2
-    * ...
+     * file1
+     * file2
+     * ...
    * sql_server_table2
-    * file1
-    * file2
+     * file1
+     * file2
    * ...
 
 * dir_list.txt
