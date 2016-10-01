@@ -13,7 +13,7 @@ To save DBA time and also allow it continuesly run ingestion over night, I save 
 uber-kafka-file-producer-0.0.1-SNAPSHOT.jar will be generated in target dir
 
 **windows**
-You can build it using eclipse or other IDE, export jar
+<br>You can build it using eclipse or other IDE, export jar
 
 <h2>Run</h2>
 copy config.properties, log4j.properties and uber-kafka-file-producer-0.0.1-SNAPSHOT.jar in the same dir<br>
@@ -21,19 +21,19 @@ make sure update your brokers ip in config.properties file<br>
 linuxBox> nohup java -Xms256m -Xmx1096m -jar uber-kafka-file-producer-0.0.1-SNAPSHOT.jar ./root_file_folder dir_list.txt
 
 <h2>File layout example</h2>
-*SurveyBackFillFiles
-   *sql_server_table1
+* SurveyBackFillFiles
+   * sql_server_table1
     * file1
     * file2
     * ...
-   *sql_server_table2
-   *  file1
-   *  file2
-   *...
+   * sql_server_table2
+    * file1
+    * file2
+   * ...
 
-*dir_list.txt
-  *sql_server_table1
-  *sql_server_table2
+* dir_list.txt
+  * sql_server_table1
+  * sql_server_table2
   
 <h2>Issues and Solutions</h2>
 1. run the producer in Windows, it does not handle internal chars properly, so I run producer in Linux (changing eclipse char setting in Windows did not solve the problem)
