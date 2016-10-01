@@ -8,7 +8,7 @@ To save DBA time and also allow it continuesly run ingestion over night, I save 
 
 <h2>build</h2>
 **linux**
-download the project, in the project root, type
+<br>download the project, in the project root, type
 **mvn clean package**
 uber-kafka-file-producer-0.0.1-SNAPSHOT.jar will be generated in target dir
 
