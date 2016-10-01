@@ -37,4 +37,4 @@ linuxBox> `nohup java -Xms256m -Xmx1096m -jar uber-kafka-file-producer-0.0.1-SNA
   
 <h2>Issues and Solutions</h2>
 1. run the producer in Windows, it does not handle internal chars properly, so I run producer in Linux (changing eclipse char setting in Windows did not solve the problem)
-2. If copy files from Windows to unix, please run dos2unix, otherwise down stream program such as storm may have problem to process the data
+2. when copy files from Windows to unix, please run dos2unix, otherwise down stream program such as storm may have problem to process the data
