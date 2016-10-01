@@ -6,7 +6,7 @@ Based on this rate, it will need 78 days to finish ingestion. Apprarently it is 
 
 To save DBA time and also allow it continuesly run ingestion over night, I save all data to my local file system first, then let producer read local files. With new producer, the ingestion finishes less than 24 hours.
 
-To build
+<h2>To build</h2>
 linux
 download the project, in the project root, type
 mvn clean package
